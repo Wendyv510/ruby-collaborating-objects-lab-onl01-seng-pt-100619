@@ -20,7 +20,6 @@ class Artist
   def songs 
     Song.all.select do |song| 
       song.artist == self
-      pust self.songs 
     end 
   end 
   
